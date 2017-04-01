@@ -2,11 +2,20 @@ body {
 	background-color: #7ABEDB;
 }
 h1 {
-	color: ##233B9D;
+	color: #233B9D;
 	font-family: verdana;
         font-size: 300%;
+	text-align: center;
+}
+h2 {
+	color: #233B9D;
+	font-size: 120%;
+	text-align: center;
+	vertical-algin: text-bottom;
+	text-decoration: underline;
 }
 p {
         color: #010101;
 	font-size: 150%;
+	text-align: center;
 }
