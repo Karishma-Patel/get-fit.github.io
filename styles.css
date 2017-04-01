@@ -1,3 +1,12 @@
 body {
-	background-color: #ccc;
+	background-color: #7ABEDB;
+}
+h1 {
+	color: ##233B9D;
+	font-family: verdana;
+        font-size: 300%;
+}
+p {
+        color: #010101;
+	font-size: 150%;
 }
