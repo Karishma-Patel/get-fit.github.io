@@ -6,16 +6,12 @@
 <body>
 <h1>Get Fit!</h1>
 <p>Get fit today with customized workout routines created just for you.</p>
-	<form id = "timeForm" action="/action_page.php">
+	<form id = "timeAndExerciseForm" >
 		<fieldset>
 			How long do you want to work out?<br>
-			<input type = "text" name = "time">
+			<input type = "number" min = "0" name = "time">
 			minutes<br>
-			<input type = "submit" value = "Enter">
-		</fieldset>
-	</form>
-	<form id = "exerciseForm" action = "">
-		<fieldset>
+			
 			What kind of exercises would you like to do?<br><br>	
 			<input type = "checkbox" name = "exercise" value  = "Core">
 			Core
@@ -27,10 +23,10 @@
 			Shoulders and Back
 			<input type = "checkbox" name = "exercise" value  = "Cardio">
 			Cardio<br>
-			<input type = "submit" value = "Start Workout!">
+			<input type = "submit" onsubmit = "workoutstart.html" value = "Start Workout!">
 		</fieldset>	
 	</form>
 
-<p><a href="creators.html">Creators</a> </p>
+<h2><a href="creators.html">Creators</a> </h2>
 </body>
 </html>
