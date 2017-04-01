@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="script.js"></script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Get Fit!</h1>
-<p>Get fit today with customized workout routines created just for you.</p>
-	<form id = "timeAndExerciseForm" >
+<p><div id="desc">Get fit today with customized workout routines created just for you.</div></p>
+	<form id = "timeAndExerciseForm" onsubmit="getInfo()">
 		<fieldset>
 			How long do you want to work out?<br>
-			<input type = "number" min = "0" name = "time">
+			<input type = "number" min = "0" id = "time" value="0">
 			minutes<br>
 			
 			What kind of exercises would you like to do?<br><br>	
-			<input type = "checkbox" name = "exercise" value  = "Core">
+			<input type = "checkbox" id="core" value  = "Core">
 			Core
-			<input type = "checkbox" name = "exercise" value  = "Arms">
+			<input type = "checkbox" id="arms" value  = "Arms">
 			Arms
-			<input type = "checkbox" name = "exercise" value  = "Legs">
+			<input type = "checkbox" id="legs" value  = "Legs">
 			Legs
-			<input type = "checkbox" name = "exercise" value  = "Shoulders and Back">
+			<input type = "checkbox" id="sab" value  = "Shoulders and Back">
 			Shoulders and Back
-			<input type = "checkbox" name = "exercise" value  = "Cardio">
-			Cardio<br>
-			<input type = "submit" onsubmit = "workoutstart.html" value = "Start Workout!">
+			<input type = "checkbox" id="cardio" value  = "Cardio">
+			Cardio<br><br>
+			<input type = "submit" value = "Start Workout!">
 		</fieldset>	
 	</form>
 

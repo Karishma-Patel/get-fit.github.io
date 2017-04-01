@@ -1,4 +1,5 @@
-function myFunction() {
+function getInfo() {
 	alert("what!");
-	alert(document.getElementById("mytext").value);
+	alert(document.getElementById("time").value);
+	alert(document.getElementById("corr").checked);
 }

@@ -1,21 +1,72 @@
 body {
 	background-color: #7ABEDB;
+	font-family: consolas;
+	font-size: 12px;
 }
+
+@font-face {
+	font-family: Stellar;  
+	src: url(Stellar-Regular.otf);  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Stellar;  
+	src: url(Stellar-Light.otf);  
+	font-weight: lighter;  
+}
+
 h1 {
 	color: #233B9D;
-	font-family: verdana;
-        font-size: 300%;
+	font-family: Stellar;
+	text-transform: uppercase;
+    font-size: 70px;
 	text-align: center;
 }
+
 h2 {
 	color: #233B9D;
 	font-size: 120%;
 	text-align: center;
-	vertical-algin: text-bottom;
+	vertical-align: text-bottom;
+	text-transform: uppercase;
+}
+
+h2 a {
+	color: #233B9D;
+	text-decoration: none;
+}
+
+h2 a:hover{
 	text-decoration: underline;
 }
+
+fieldset {
+	border: none;
+	text-align: center;
+}
+
+input[type=submit]{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: calibri;
+	text-transform: uppercase;
+	border: 1px dotted #666;
+	background-color: #eee;
+	padding:10px;
+}
+
 p {
-        color: #010101;
+    color: #010101;
 	font-size: 150%;
+	text-align: center;
+}
+
+#desc {
+	font-family: Stellar;
+	font-weight: lighter;
+	font-size: 15px;
+	font-style: italic;
 	text-align: center;
 }
