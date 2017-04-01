@@ -1,19 +1,23 @@
 body {
 	/* 7ABEDB */
 	background-color: #90CAF9;
+	background: -webkit-linear-gradient(#64B5F6, #BBDEFB) fixed; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#64B5F6, #BBDEFB) fixed; /* For Opera 11.1 to 12.0 */ 
+    background: -moz-linear-gradient(#64B5F6, #BBDEFB) fixed; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#64B5F6, #BBDEFB) fixed; /* Standard syntax */
 	font-family: consolas;
 	font-size: 12px;
 }
 
 @font-face {
 	font-family: Stellar;  
-	src: url(Stellar-Regular.otf);  
+	src: url(fonts/Stellar-Regular.otf);  
 	font-weight: normal;  
 }
 
 @font-face {
 	font-family: Stellar;  
-	src: url(Stellar-light.otf);  
+	src: url(fonts/Stellar-light.otf);  
 	font-weight: lighter;  
 }
 
