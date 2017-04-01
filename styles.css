@@ -96,6 +96,17 @@ p {
 	border-radius: 50px;
 }
 
+#exercisePanel {
+	width: 600px;
+        margin: auto;
+	margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+}
+
 #content {
 	margin-top: 200px;
 }
