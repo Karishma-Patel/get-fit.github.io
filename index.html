@@ -5,28 +5,32 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Get Fit!</h1>
-<p><div id="desc">Get fit today with customized workout routines created just for you.</div></p>
-	<form id = "timeAndExerciseForm" onsubmit="getInfo()">
+<div id="content">
+	<h1>Get Fit!</h1>
+	<p><div id="desc">Get fit today with customized workout routines created just for you.</div></p>
+		<div id="panel">
+		<form id = "timeAndExerciseForm" onsubmit="getInfo()">
 		<fieldset>
 			How long do you want to work out?<br>
 			<input type = "number" min = "0" id = "time" value="0">
 			minutes<br>
 			
-			What kind of exercises would you like to do?<br><br>	
+			What kind of exercises would you like to do?<br>	
 			<input type = "checkbox" id="core" value  = "Core">
 			Core
 			<input type = "checkbox" id="arms" value  = "Arms">
 			Arms
 			<input type = "checkbox" id="legs" value  = "Legs">
 			Legs
-			<input type = "checkbox" id="sab" value  = "Shoulders and Back">
-			Shoulders and Back
+			<input type = "checkbox" id="back" value  = "Shoulders and Back">
+			Shoulders & Back
 			<input type = "checkbox" id="cardio" value  = "Cardio">
-			Cardio<br><br>
+			Cardio<br>
 			<input type = "submit" value = "Start Workout!">
 		</fieldset>	
 	</form>
+	</div>
+</div>
 
 <h2><a href="creators.html">Creators</a> </h2>
 </body>

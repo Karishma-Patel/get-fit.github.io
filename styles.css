@@ -1,5 +1,6 @@
 body {
-	background-color: #7ABEDB;
+	/* 7ABEDB */
+	background-color: #90CAF9;
 	font-family: consolas;
 	font-size: 12px;
 }
@@ -12,7 +13,7 @@ body {
 
 @font-face {
 	font-family: Stellar;  
-	src: url(Stellar-Light.otf);  
+	src: url(Stellar-light.otf);  
 	font-weight: lighter;  
 }
 
@@ -22,6 +23,7 @@ h1 {
 	text-transform: uppercase;
     font-size: 70px;
 	text-align: center;
+	margin-bottom: -10px;
 }
 
 h2 {
@@ -52,9 +54,18 @@ input[type=submit]{
 	border-radius: 10px;
 	font-family: calibri;
 	text-transform: uppercase;
-	border: 1px dotted #666;
+	border: 1px solid #ccc;
 	background-color: #eee;
 	padding:10px;
+	margin-top: 10px;
+}
+
+input[type=number]{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 5px;
 }
 
 p {
@@ -69,4 +80,18 @@ p {
 	font-size: 15px;
 	font-style: italic;
 	text-align: center;
+}
+
+#panel {
+	width: 450px;
+	margin: auto;
+	padding: 20px;
+	background-color: #fff;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#content {
+	margin-top: 200px;
 }
