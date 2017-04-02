@@ -252,4 +252,10 @@ button.right {
 	text-align:center;
 	width:600px;
 	margin:auto;
+
+.rainbow {
+  background: linear-gradient(to bottom right, #000080, #00FFFF);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
