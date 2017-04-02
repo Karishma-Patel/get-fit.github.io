@@ -41,7 +41,7 @@ function process(count) {
 	// if splitting up time is > 5min, then total will just be how many segments of 2min workouts can be done instead
 	localStorage.setItem("total", time / count > 2 ? time / 2 : count);
 	window.location.href = "workoutstart.html";
-}
+} 
 
 // timer
 function countdown() {

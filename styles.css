@@ -244,7 +244,7 @@ button.right {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.08), 0 2px 4px -3px rgba(0, 0, 0, 0.14);
 }
 
-#nav {
+#nav { 
 	text-align: center;
 }
 
@@ -252,6 +252,7 @@ button.right {
 	text-align:center;
 	width:600px;
 	margin:auto;
+}
 
 .rainbow {
   background: linear-gradient(to bottom right, #000080, #00FFFF);
