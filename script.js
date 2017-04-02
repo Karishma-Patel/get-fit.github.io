@@ -20,7 +20,10 @@ function getInfo() {
 
 function process(count) {
 	var time = document.getElementById("time").value;
-	var timePerExercise = 
+	alert("going");
+
+	window.document.location.href = "workoutstart.html";
+	alert("done");
 }
 
 // workouts
