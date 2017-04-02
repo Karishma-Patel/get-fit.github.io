@@ -77,6 +77,15 @@ function changeDiv(div) {
 		 + workout.descrip + "</div>";
 }
 
+function playAudio(){
+var aud = ["audio/GetFit.wav","audio/GitFitEmojee.wav","audio/GreatJob.wav","audio/KeepGoing.wav","audio/MusclesDont.wav","audio/TheGrindNeverStops.wav","audio/YouCanDoIt.wav"];
+var item = aud[Math.floor(Math.random()*aud.length)];
+var audio = new Audio();
+audio.src = item;
+audio.play();
+
+}
+
 function Decrement() {
 	if (document.getElementById) {
 		minutes = document.getElementById("minutes");
@@ -91,10 +100,14 @@ function Decrement() {
 		if(getminutes()==0&&getseconds()==0)
 			restart();
 		else {
+			if(getseconds()==30)
+			playAudio();
 			setTimeout('Decrement()',1000);
 			secs--;
 		}
+	
 	}
+	
 }
 function getminutes() {
 	// minutes is seconds divided by 60, rounded down
