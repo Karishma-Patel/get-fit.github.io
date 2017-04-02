@@ -20,11 +20,50 @@ function getInfo() {
 
 function process(count) {
 	var time = document.getElementById("time").value;
-	alert("going");
-
-	window.document.location.href = "workoutstart.html";
-	alert("done");
+	window.location.href = "workoutstart.html";
 }
+
+// timer
+
+var mins = time;
+var secs = mins*60;
+
+function countdown() {
+	setTimeout('Decrement()',1000);
+}
+function Decrement() {
+	if (document.getElementById) {
+		minutes = document.getElementById("minutes");
+		seconds = document.getElementById("seconds");
+		// if less than a minute remaining
+		if (seconds < 59) {
+			seconds.value = ("0" + secs).slice(-2);
+		} else {
+			minutes.value = ("0" + getminutes()).slice(-2);
+			seconds.value = ("0" + getseconds()).slice(-2);
+		}
+		secs--;
+		if(getminutes()==-1&&getseconds()==58)
+			restart()
+		else
+		setTimeout('Decrement()',1000);
+	}
+}
+function getminutes() {
+	// minutes is seconds divided by 60, rounded down
+	mins = Math.floor(secs / 60);
+	return mins;
+}
+function getseconds() {
+	// take mins remaining (as seconds) away from total seconds remaining
+	return secs-Math.round(mins *60);
+}
+function restart(){
+	alert("Hello");
+}
+
+countdown();
+
 
 // workouts
 Workout.instances = {};
