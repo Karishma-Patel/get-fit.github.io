@@ -167,7 +167,7 @@ button.nice {
 	height:100%; 
 	font-size:100px;
 	background: none;
-	border:none;
+	border:none; 
 	font-family: Roboto;
 	font-weight: 300;
 	text-transform: uppercase;
