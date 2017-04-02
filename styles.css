@@ -50,6 +50,10 @@ h1 {
 	margin-bottom: -10px;
 }
 
+h1 a {
+	color: inherit;
+}
+
 h2 {
 	color: #233B9D;
 	font-size: 13px;
