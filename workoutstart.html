@@ -4,11 +4,13 @@
 <link rel= "stylesheet" href = "styles.css">
 </head>
 <body>
+<div id="panel" style="width:100px;">
 <div id="timer">
 	<input id="minutes" type="text" style="width: 40px; height: 40px; border: none; background-color:none; font-size: 30px; font-weight: bold;"> : <input id="seconds" type="text" style="width: 40px; height: 40px; border: none; background-color:none; font-size: 30px; font-weight: bold;">
 </div>
+</div>
 <script>
-var mins = 5;
+var mins = .5;
 var secs = mins*60;
 
 function countdown() {
@@ -20,12 +22,15 @@ function Decrement() {
 		seconds = document.getElementById("seconds");
 		// if less than a minute remaining
 		if (seconds < 59) {
-			seconds.value = secs;
+			seconds.value = ("0" + secs).slice(-2);
 		} else {
-			minutes.value = getminutes();
-			seconds.value = getseconds();
+			minutes.value = ("0" + getminutes()).slice(-2);
+			seconds.value = ("0" + getseconds()).slice(-2);
 		}
 		secs--;
+		if(getminutes()==-1&&getseconds()==58)
+			restart()
+		else
 		setTimeout('Decrement()',1000);
 	}
 }
@@ -37,6 +42,9 @@ function getminutes() {
 function getseconds() {
 	// take mins remaining (as seconds) away from total seconds remaining
 	return secs-Math.round(mins *60);
+}
+function restart(){
+	alert("Hello");
 }
 
 countdown();
