@@ -2,12 +2,43 @@
 <html>
 <head>
 <link rel = "stylesheet" href = "styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<script src="script.js"></script>
 </head>
 <body>
-	<h1>Included Exercises</h1>
-        <div id="exercisePanel" onload="paginate()">
-        <button>okay</button>
+	<h1 class="animated bounceInLeft rubberBand">Included Exercises</h1>
+        <div>
+        <div id="exercisePanel" class="animated bounceInLeft z-depth-2">
         </div>
+        <script>initMap();
+        initPanel();</script>
+<!--         <div id="toc">
+                Crunches&emsp;
+                Jumping Jacks&emsp;
+                Tricep Dips&emsp;
+                Squats&emsp;
+                Lunges&emsp;
+                Russian Twists&emsp;
+                Calf Raises&emsp;
+                Push Ups&emsp;
+                Plank&emsp;
+                Lunge Split Jumps&emsp;
+                Sit Ups&emsp;
+                Bird-Dogs&emsp;
+                Oblique Crunches&emsp;
+                Side Lunges&emsp;
+                Butt Kickers&emsp;
+                Small Arm Circles&emsp;
+                Big Arm Circles&emsp;
+                Plank Ups&emsp;
+                Supermans&emsp;
+                Bridge&emsp;
+        </div> -->
+        <button id="prev" class="animated zoomIn left z-depth-2" onclick="prev()">←</button>
+        <button id="next" class="animated zoomIn right z-depth-2" onclick="next()">→</button>
+        </div>
+       <!--  <script>loadContent();</script> -->
 <!-- 	<h4>
         <div id="exercisePanel">
 		<img src = "Exercise_Photos/Crunches.jpg"><br>

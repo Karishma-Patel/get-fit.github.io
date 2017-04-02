@@ -84,7 +84,7 @@ h4 {
 	text-align:left;
 	font-size:20px;
 	font-color:#666666;
-	font-weight:350;
+	font-weight:400;
 }
 
 a {
@@ -144,6 +144,7 @@ p {
 #exercisePanel {
 	width: 600px;
         margin: auto;
+        margin-top:20px;
 	margin-bottom: 30px;
         padding: 20px;
         background-color: #fff;
@@ -172,6 +173,45 @@ button.nice {
 	text-transform: uppercase;
 }
 
+button.left {
+	position: absolute;
+	left:150px;
+	bottom:50%;
+	padding:30px;
+	border:none;
+	font-size:25px;
+	background: #fff;
+	-webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+}
+
+button.right {
+	position:absolute;
+	right:150px;
+	bottom:50%;
+	padding:30px;
+	border:none;
+	font-size:25px;
+	background: #fff;
+	-webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+}
+
+#left {
+	position:absolute;
+	font-size: 70px;
+	top:350px;
+	left:35%;
+}
+
+#right {
+	position:absolute;
+	font-size: 70px;
+	right:35%;
+	top:350px;
+}
 #workout {
 	width: 575px;
 	height: 200px;
@@ -202,4 +242,14 @@ button.nice {
 
 .z-depth-2 {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.08), 0 2px 4px -3px rgba(0, 0, 0, 0.14);
+}
+
+#nav {
+	text-align: center;
+}
+
+#toc {
+	text-align:center;
+	width:600px;
+	margin:auto;
 }
