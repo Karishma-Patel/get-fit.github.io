@@ -1,3 +1,8 @@
+var time = localStorage.totalTime;
+var mins = time;
+var secs = mins*60;
+var count = localStorage.total;
+
 function getInfo() {
 	var core = document.getElementById("core").checked;
 	var cardio = document.getElementById("cardio").checked;
@@ -19,18 +24,19 @@ function getInfo() {
 }
 
 function process(count) {
+	localStorage.setItem("total", count);
 	var time = document.getElementById("time").value;
+	console.log("time after proc : " + time);
+	localStorage.setItem("totalTime", time);
 	window.location.href = "workoutstart.html";
 }
 
 // timer
-
-var mins = time;
-var secs = mins*60;
-
 function countdown() {
+	console.log(time);
 	setTimeout('Decrement()',1000);
 }
+
 function Decrement() {
 	if (document.getElementById) {
 		minutes = document.getElementById("minutes");
@@ -42,11 +48,12 @@ function Decrement() {
 			minutes.value = ("0" + getminutes()).slice(-2);
 			seconds.value = ("0" + getseconds()).slice(-2);
 		}
-		secs--;
-		if(getminutes()==-1&&getseconds()==58)
-			restart()
+		if(getminutes()==0&&getseconds()==0)
+			restart();
 		else
-		setTimeout('Decrement()',1000);
+			setTimeout('Decrement()',1000);
+		secs--;
+
 	}
 }
 function getminutes() {
@@ -58,11 +65,11 @@ function getseconds() {
 	// take mins remaining (as seconds) away from total seconds remaining
 	return secs-Math.round(mins *60);
 }
-function restart(){
-	alert("Hello");
-}
 
-countdown();
+function restart(){
+	//alert("Hello");
+	console.log("DONE");
+}
 
 
 // workouts
