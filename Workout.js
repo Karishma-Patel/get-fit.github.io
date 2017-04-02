@@ -5,6 +5,7 @@ var arms = [];
 var legs = [];
 var back = [];
 
+
 function Workout(slots) {
 	this.name = slots.name;
 	this.area = slots.area;
@@ -12,6 +13,7 @@ function Workout(slots) {
 };
 
 Workout.data = function() {
+
 	core.push(new Workout({name:"Crunches", area:"core", descrip:"Lay on your back with your legs bent at the knees. Slowly raise your shoulders a few inches off the ground by contracting your abs, and return to the starting position."}));
 	cardio.push(new Workout({name:"Jumping Jacks", area:"cardio", descrip:"Stand normally, then jump your feet out to the sides and raise your arms over your head before returning to the starting position."}));
 	arms.push(new Workout({name:"Tricep Dips", area:"arms", descrip:"Place your hands shoulder-width apart on a stable surface. Hold yourself with your arms straight and your legs extended in front of you. Slowly lower your arms into a 90-degree angle, and then straighten."}));

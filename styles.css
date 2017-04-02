@@ -1,5 +1,5 @@
 body {
-	/* 7ABEDB, 90CAF9 */
+	/* 7ABEDB */
 	background-color: #90CAF9;
 	background: -webkit-linear-gradient(#64B5F6, #BBDEFB) fixed; /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#64B5F6, #BBDEFB) fixed; /* For Opera 11.1 to 12.0 */ 
@@ -12,7 +12,7 @@ body {
 @font-face {
 	font-family: Stellar;  
 	src: url(fonts/Stellar-Regular.otf);  
-	font-weight: normal;
+	font-weight: normal;  
 }
 
 @font-face {
