@@ -185,3 +185,34 @@ Workout.data = function() {
 };
 
 // ???
+// exercise panel shifting
+function paginate() {
+	var types = initMap();
+
+}
+
+function initMap() {
+	var types = {};
+	types.push({name:"Crunches"; img:"Exercise_Photos/Crunches.jpg"; desc:"Lay on your back with your legs bent at the knees. Slowly raise your shoulders a few inches off the ground by contracting your abs, and return to the starting position."});
+	types.push({name:"Jumping Jacks"; img:"Exercise_Photos/JumpingJacks.jpg"; desc:"Stand normally, then jump your feet out to the sides and raise your arms over your head before returning to the starting position."});
+	types.push({name:"Tricep Dips"; img:"Exercise_Photos/TricepDips.jpg"; desc:"Place your hands shoulder-width apart on a stable surface. Hold yourself with your arms straight and your legs extended in front of you. Slowly lower your arms into a 90-degree angle, and then straighten."});
+	types.push({name:"Squats"; img:"Exercise_Photos/Squats.jpg"; desc:"Stand with your feet apart, look straight ahead and hold your arms straight out in front of you. Lower your hips into a squat, keeping your knees over your feet and your back straight."});
+	types.push({name:"Lunges"; img:"Exercise_Photos/Lunges.jpg"; desc:"Step forward with one foot at a time, lowering until your knees are both at 90-degree angles. Make sure your front knee stays over your foot and your back knee doesn’t touch the ground."});
+	types.push({name:"Russian Twists"; img:"Exercise_Photos/RussianTwists.png"; desc:"Sit on the ground with your knees bent. Your upper body should create a V-shape with your thighs. Extend your arms out fully in front of you, and then turn to each side until they’re parallel to the ground."});
+	types.push({name:"Calf Raises"; img:"Exercise_Photos/CalfRaises.jpg"; desc:"Stand on the edge of a step or something elevated, with your heels hanging off the back and your toes on the ground. Raise your heels so you’re on tiptoe, and then lower them so they’re below the edge of the platform."});
+	types.push({name:"Push Ups"; img:"Exercise_Photos/PushUps.jpg"; desc:"Get into a plank position. Lower your body so that your chest gets as close to the ground as possible. Pull your elbows back as you descend, and keep your body straight."});
+	types.push({name:"Plank"; img:"Exercise_Photos/Plank.jpg"; desc:"Get into a push-up position, placing your forearms on the ground. Hold yourself up using your core."});
+	types.push({name:"Lunge Split Jumps"; img:"Exercise_Photos/LungeSplitJumps.jpg"; desc:"Get in a lunge position with one foot forward. Jump as high as possible, bringing your feet together, and then return to a lunge with the opposite leg forward."});
+	types.push({name:"Sit Ups"; img:"Exercise_Photos/SitUps.jpg"; desc:"Lay on your back with your legs bent at the knees and your arms crossed on your chest. Lift your head, shoulder and back off the ground until you’re sitting up, and then lower down again."});
+	types.push({name:"Bird-Dogs"; img:"Exercise_Photos/BirdDogs.jpg"; desc:"Get on all fours with your knees and hands on the ground, looking at the floor. Extend one arm straight out in front of you and the opposite leg behind you. Repeat with the opposite side."});
+	types.push({name:"ObliqueCrunches"; img:"Exercise_Photos/ObliqueCrunches.jpg"; desc:"Lay on your back with your legs bent at the knees. Perform a crunch, but bring your elbow up to the opposite knee."});
+	types.push({name:"Side Lunges"; img:"Exercise_Photos/SideLunges.jpg"; desc:"Stand straight with your feet shoulder-width apart and your hands clasped in front of you. Take a lateral step out to one side, bending the knee you step with and keeping the other straight. Straighten the leg you stepped with to lunge to the other side."});
+	types.push({name:"ButtKickers"; img:"Exercise_Photos/ButtKickers.jpg"; desc:"Stand normally, and then run in place, bringing your heels up to your butt each time."});
+	types.push({name:"Small Arm Circles"; img:"Exercise_Photos/SmallArmCircles.jpg"; desc:"Extend your arms straight out to your sides. Move them in small, quick circles."});
+
+	types.push({name:"Big Arm Circles"; img:"Exercise_Photos/BigArmCircles.jpg"; desc:"Extend your arms straight out to your sides. Move them in large, wide circles."});
+	types.push({name:"Plank Ups"; img:"Exercise_Photos/PlankUps.jpg"; desc:"Start in a high plank position. Lower one forearm to the ground, then the other, until you’re in a low plank. Then straighten one arm at a time into a high plank."});
+	types.push({name:"Supermans"; img:"Exercise_Photos/Supermans.jpg"; desc:"Lie facedown on the ground. Reach your arms and legs straight out into the air so it looks like you’re doing a superman pose, and then lower."});
+	types.push({name:"Bridge"; img:"Exercise_Photos/Bridge.jpg"; desc:"Lay on your back with your legs bent at the knees. Lift your pelvis up to the ceiling and then lower it again."});
+	return types;
+}
