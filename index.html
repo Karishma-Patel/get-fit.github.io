@@ -3,19 +3,23 @@
 <head>
 <script src="script.js"></script>
 <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 </head>
 <body>
-<div id="content">
-	<h1>Get Fit!</h1>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+<div id="content" class="animated bounceInLeft">
+	<a href=""><h1 class="animated rubberBand">Get Fit!</h1></a>
 	<p><div id="desc">Get fit today with customized workout routines created just for you.</div></p>
-		<div id="panel">
+		<div id="panel" class="z-depth-2">
 		<form id = "timeAndExerciseForm" onsubmit="return false">
 		<fieldset>
-			How long do you want to work out?<br>
+			<b>How long do you want to work out?</b><br>
 			<input type = "number" min = "1" max = "99" id = "time" value="1">
-			minute(s)<br>
+			minute(s)<br><br>
 			
-			What kind of exercises would you like to do?<br>	
+			<b>What kind of exercises would you like to do?</b>	<br>	
 			<input type = "checkbox" id="core" value  = "Core">
 			Core
 			<input type = "checkbox" id="arms" value  = "Arms">
@@ -25,14 +29,13 @@
 			<input type = "checkbox" id="back" value  = "Shoulders and Back">
 			Shoulders & Back
 			<input type = "checkbox" id="cardio" value  = "Cardio">
-			Cardio<br>
-			<input type = "submit" onclick="getInfo()" value = "Start Workout!">
+			Cardio<br><br>
+			<input type = "submit" onclick="getInfo()" style="font-family:Roboto; font-size:15px;" value = "Start Workout!">
 		</fieldset>	
 	</form>
 	</div>
+	<h2><a href="exerciseList.html">View All Exercises</a>&emsp; &#x1F4AA; &emsp;<a href="creators.html">Creators</a> </h2>
 </div>
 
-<h2><a href="exerciseList.html">View All Exercises</a> </h2>
-<h2><a href="creators.html">Creators</a> </h2>
 </body>
 </html>
