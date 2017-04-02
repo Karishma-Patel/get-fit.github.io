@@ -5,7 +5,7 @@ body {
     background: -o-linear-gradient(#64B5F6, #BBDEFB) fixed; /* For Opera 11.1 to 12.0 */ 
     background: -moz-linear-gradient(#64B5F6, #BBDEFB) fixed; /* For Firefox 3.6 to 15 */
     background: linear-gradient(#64B5F6, #BBDEFB) fixed; /* Standard syntax */
-	font-family: consolas;
+	font-family: Roboto;
 	font-size: 12px;
 }
 
@@ -21,11 +21,31 @@ body {
 	font-weight: lighter;  
 }
 
+@font-face {
+	font-family:Roboto;
+	src: url(fonts/roboto/Roboto-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family:Roboto;
+	src: url(fonts/roboto/Roboto-Thin.ttf);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family:Roboto;
+	src: url(fonts/roboto/Roboto-Light.ttf);
+	font-weight: 350;
+}
+
+
 h1 {
 	color: #233B9D;
-	font-family: Stellar;
+	font-family: Roboto;
+	font-weight: 400;
 	text-transform: uppercase;
-    font-size: 70px;
+    font-size: 100px;
 	text-align: center;
 	margin-bottom: -10px;
 }
@@ -34,6 +54,8 @@ h2 {
 	color: #233B9D;
 	font-size: 13px;
 	text-align: center;
+	font-family: Roboto;
+	font-weight: 400px;
 	vertical-align: text-bottom;
 	text-transform: uppercase;
 }
@@ -48,9 +70,17 @@ h2 a:hover{
 }
 
 h3 {
-	font-family: Stellar;
+	font-family: Roboto;
 	text-transform: uppercase;
 	font-size: 30px;
+}
+
+h4 {
+	/* for exercise descrip */
+	text-align:left;
+	font-size:20px;
+	font-color:#666666;
+	font-weight:350;
 }
 
 a {
@@ -90,8 +120,7 @@ p {
 }
 
 #desc {
-	font-family: Stellar;
-	font-weight: lighter;
+	font-weight:350;
 	font-size: 15px;
 	font-style: italic;
 	text-align: center;
@@ -100,6 +129,7 @@ p {
 #panel {
 	width: 450px;
 	margin: auto;
+	font-size: 15px;
 	padding: 20px;
 	background-color: #fff;
 	-webkit-border-radius: 50px;
@@ -133,7 +163,8 @@ button.nice {
 	font-size:100px;
 	background: none;
 	border:none;
-	font-family: consolas;
+	font-family: Roboto;
+	font-weight: 300;
 	text-transform: uppercase;
 }
 
@@ -141,10 +172,30 @@ button.nice {
 	width: 575px;
 	height: 200px;
     margin: auto;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 25px 20px 30px;
     margin-top:30px;
     background-color: #fff;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+}
+
+#timer {
+	background: #fff;
+	-webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    margin: auto;
+    margin-top:30px;
+    font-size: 40px;
+	width:150px;
+	height:80px;
+	text-align: center;
+}
+
+/* stuff from materialize css */
+
+.z-depth-2 {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.11), 0 1px 10px 0 rgba(0, 0, 0, 0.08), 0 2px 4px -3px rgba(0, 0, 0, 0.14);
 }
