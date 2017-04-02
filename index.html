@@ -9,11 +9,11 @@
 	<h1>Get Fit!</h1>
 	<p><div id="desc">Get fit today with customized workout routines created just for you.</div></p>
 		<div id="panel">
-		<form id = "timeAndExerciseForm" onsubmit="getInfo()">
+		<form id = "timeAndExerciseForm" onsubmit="return false">
 		<fieldset>
 			How long do you want to work out?<br>
-			<input type = "number" min = "0" max = "99" id = "time" value="0">
-			minutes<br>
+			<input type = "number" min = "1" max = "99" id = "time" value="1">
+			minute(s)<br>
 			
 			What kind of exercises would you like to do?<br>	
 			<input type = "checkbox" id="core" value  = "Core">
@@ -26,7 +26,7 @@
 			Shoulders & Back
 			<input type = "checkbox" id="cardio" value  = "Cardio">
 			Cardio<br>
-			<input type = "submit" value = "Start Workout!">
+			<input type = "submit" onclick="getInfo()" value = "Start Workout!">
 		</fieldset>	
 	</form>
 	</div>
