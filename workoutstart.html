@@ -4,15 +4,23 @@
 <link rel= "stylesheet" href = "styles.css">
 <script src="script.js"></script>
 </head>
-<body onload="countdown()">
-<a href="index.html">Start Over Workout</a>
+<body>
+<div id="content">
+
 <h1>Time Left</h1>
 <div id="panel" style="width:100px; margin-top:30px;">
 <div id="timer">
-	<input id="minutes" type="text" style="width: 40px; height: 40px; border: none; background-color:none; font-size: 30px; font-weight: bold;"> : <input id="seconds" type="text" style="width: 40px; height: 40px; border: none; background-color:none; font-size: 30px; font-weight: bold;">
+	<input id="minutes" type="text" value="00" readonly style="width: 40px; height: 40px; border: none; background-color:none; font-size: 30px; font-weight: bold;"> : <input id="seconds" type="text" value="00" readonly style="width: 40px; height: 40px; border: none; background-color:none; font-size: 30px; font-weight: bold;">
 </div>
 </div>
 <h1 style="margin-top:0px;">Exercise</h1>
+<div id="workout" style="text-align: center;">
+	<button class="nice" id="start" onclick="start()">Start</button>
+</div>
+<h2>
+	<a href="index.html">Start Another Workout</a>
+</h2>
+</div>
 <script>
 </script>
 </body>
