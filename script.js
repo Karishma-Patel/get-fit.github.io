@@ -218,32 +218,27 @@ function initPanel() {
 }
 
 function updatePanel(ex) {
-	document.getElementById("exercisePanel").innerHTML = "<img src=\"" + ex.img + "\"><br><h4><b>" + ex.name + "</b><br>" + ex.desc +"</h4>";
+	document.getElementById("exercisePanel").innerHTML = "<div class=\"animated fadeIn\"><center><img src=\"" + ex.img + "\"></center><br><h4><b>" + ex.name + "</b><br>" + ex.desc +"</div></h4>";
+	if (index == types.length - 1)
+		document.getElementById("next").disabled=true;
+	else if (index == 0)
+		document.getElementById("prev").disabled=true;
+	else {
+		document.getElementById("prev").disabled=false;
+		document.getElementById("next").disabled=false;
+	}
 }
 
 function next() {
 	if (index < types.length - 1) {
-		document.getElementById("prev").disabled=false;
 		index++;
 		updatePanel(types[index]);
-	} else {
-		document.getElementById("next").disabled = true;
 	}
 }
 
 function prev() {
 	if (index > 0) {
-		document.getElementById("next").disabled=false;
 		index--;
 		updatePanel(types[index]);
-	} else {
-		document.getElementById("prev").disabled = true;
 	}
-}
-
-function loadContent() {
-	var list = []
-	for (var key in types)
-		list.push(types[key].name)
-	document.getElementById("oh").innerHTML = list;
 }
